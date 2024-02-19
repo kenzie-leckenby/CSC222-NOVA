@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class logCalculator {
     public static int integerLog(int number, int base) {
-        // If the number != 0 then continue dividing
+        // If the quotient is >= to 0 then continue dividing
         if (number / base > 0) {
             return 1 + integerLog(number/base, base);
         }
