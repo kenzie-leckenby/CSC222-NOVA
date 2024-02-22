@@ -1,10 +1,8 @@
 /**
  * 
  */
-package testerPackage;
-
 import java.util.Scanner;
-import classPackage.Car;
+import Module_6_Project.classPackage.Car;
 
 /**
  * @author Larry Shannon
