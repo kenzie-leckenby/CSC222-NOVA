@@ -44,11 +44,10 @@ public class Car {
         int randModel = rand.nextInt(5);
         int randColor = rand.nextInt(5);
         int randYear = rand.nextInt(2000, 2025);
-        double randTankSize = rand.nextDouble(8.0, 24.0);
-        double randFuelEconomy = rand.nextDouble(15.0, 35.0);
-        double randOptimalSpeed = rand.nextDouble(45.0, 80.0);
+        double randTankSize = rand.nextDouble(8.0, 35.0);
+        double randFuelEconomy = rand.nextDouble(15.0, 55.0);
+        double randOptimalSpeed = rand.nextDouble(45.0, 65.0);
         double randOdometer = rand.nextDouble(0.0, 300001);
-        double randTripOdometer = rand.nextDouble(0.0, randOdometer + 1.0);
         double randFuelLevel = rand.nextDouble(0.0, randTankSize + 1.0);
 
         this.make = makes[randMake];
@@ -59,7 +58,7 @@ public class Car {
         this.fuelEconomy = randFuelEconomy;
         this.optimalSpeed = randOptimalSpeed;
         this.odometer = randOdometer;
-        this.tripOdometer = randTripOdometer;
+        this.tripOdometer = 0.0;
         this.fuelLevel = randFuelLevel;
     }
 
@@ -150,6 +149,9 @@ public class Car {
     }
 
     public void setUpTrip(double avgSpeed, double distance) {
+
+    }
+    public void drive() {
 
     }
 }
